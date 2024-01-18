@@ -1,22 +1,26 @@
-import "./global.css"
 import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 import {
-  View,
+  SafeAreaView,
+  ScrollView,
+  StatusBar,
+  StyleSheet,
   Text,
+  useColorScheme,
+  View,
 } from 'react-native';
+
 
 
 function App(): React.JSX.Element {
 
   return (
     <NavigationContainer>
-      <View className="flex-1 bg-red-400 w-full h-full">
-          <Text>Hola</Text>
-      </View>
+      <SafeAreaView >
+        
+      </SafeAreaView>
     </NavigationContainer>
   );
 }
-
 
 export default App;
