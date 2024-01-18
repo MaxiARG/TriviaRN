@@ -1,6 +1,8 @@
+import "./global.css"
+import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
 import {
-  SafeAreaView,
+  View,
   Text,
 } from 'react-native';
 
@@ -8,9 +10,11 @@ import {
 function App(): React.JSX.Element {
 
   return (
-    <SafeAreaView>
-        <Text>Hola</Text>
-    </SafeAreaView>
+    <NavigationContainer>
+      <View className="flex-1 bg-red-400 w-full h-full">
+          <Text>Hola</Text>
+      </View>
+    </NavigationContainer>
   );
 }
 
